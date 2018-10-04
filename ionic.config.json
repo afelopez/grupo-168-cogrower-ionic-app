@@ -1,0 +1,7 @@
+{
+  "name": "grupo-168-cogrower-ionic-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
