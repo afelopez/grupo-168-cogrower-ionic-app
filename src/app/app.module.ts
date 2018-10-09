@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { OrchardDetailsPage } from '../pages/orchard-details/orchard-details';
+import { OrchardWriterPage } from '../pages/orchard-writer/orchard-writer';
 import { OrchardsPage } from '../pages/orchards/orchard';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -15,6 +16,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HelloIonicPage,
     OrchardDetailsPage,
+    OrchardWriterPage,
     OrchardsPage
   ],
   imports: [
@@ -26,6 +28,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HelloIonicPage,
     OrchardDetailsPage,
+    OrchardWriterPage,
     OrchardsPage
   ],
   providers: [

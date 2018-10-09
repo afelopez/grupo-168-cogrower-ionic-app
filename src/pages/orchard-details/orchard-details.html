@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <button menuToggle *ngIf="!selectedItem">
+    <button menuToggle *ngIf="!selectedOrchard">
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Item Details</ion-title>
@@ -8,10 +8,13 @@
 </ion-header>
 
 <ion-content>
-  <div class="image-header" [style.background-image]="'url(../../assets/imgs/' + selectedItem.image + ')'" [style.height.px]="150">
+  <div class="image-header" [style.background-image]="'url(../../assets/imgs/' + selectedOrchard.image + ')'" [style.height.px]="150">
+    <button ion-button clear class="edit-botton" (click)="editOrchard($event, selectedOrchard)">
+      <ion-icon name="create"></ion-icon>
+    </button>
     <h3 text-center >
-      <ion-icon [name]="selectedItem.icon"></ion-icon>
-      {{selectedItem.name}}
+      <ion-icon [name]="selectedOrchard.icon"></ion-icon>
+      {{selectedOrchard.name}}
     </h3>
   </div>
   <ion-grid>
@@ -32,13 +35,13 @@
   </ion-grid>
   <hr>
   <h5>Descipción</h5>
-  <p>{{selectedItem.description}}</p>
+  <p>{{selectedOrchard.description}}</p>
   <hr>
   <div class="contributors">
     <ion-grid>
       <ion-row>
         <ion-col>
-          <h5>Grangero:</h5>
+          <h5>Granjero:</h5>
           <ion-icon name="contact"></ion-icon>
         </ion-col>
         <ion-col>
