@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle *ngIf="!selectedItem">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Item Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="image-header" [style.background-image]="'url(../../assets/imgs/' + selectedItem.image + ')'" [style.height.px]="150">
+    <h3 text-center >
+      <ion-icon [name]="selectedItem.icon"></ion-icon>
+      {{selectedItem.name}}
+    </h3>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        Capacidad: #/#
+        <br>
+        Tiempo: x años
+        <br>
+        Cultivos: x cultivos
+      </ion-col>
+      <ion-col>
+        Ubicación:
+        <br>
+        Estado: Iniciando
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <hr>
+  <h5>Descipción</h5>
+  <p>{{selectedItem.description}}</p>
+  <hr>
+  <div class="contributors">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h5>Grangero:</h5>
+          <ion-icon name="contact"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <h5>Ayudantes:</h5>
+          <ion-icon name="contact"></ion-icon>
+          <ion-icon name="contact"></ion-icon>
+          <ion-icon name="contact"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

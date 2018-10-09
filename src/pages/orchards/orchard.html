@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Mis huertas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let orchard of orchards" (click)="orchardTapped($event, orchard)">
+      <div class="image-header" [style.background-image]="'url(../../assets/imgs/' + orchard.image + ')'" [style.height.px]="80">
+        <h3 text-center >
+          <ion-icon [name]="orchard.icon"></ion-icon>
+          {{orchard.name}}
+        </h3>
+      </div>
+
+      <!-- <ion-icon name="{{orchard.icon}}" orchard-left></ion-icon>
+      {{orchard.name}}
+      <div class="item-description" item-right>{{orchard.description}}</div> -->
+    </button>
+  </ion-list>
+</ion-content>

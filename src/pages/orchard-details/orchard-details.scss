@@ -1,0 +1,26 @@
+page-orchard-details{}
+.image-header{
+  position: relative;
+  margin: 0px 10px;
+  padding: 5%;
+  border-radius: 20px;
+  color: white;
+  h3{
+    position: absolute;
+    width: 50%;
+    padding: 10px;
+    top: calc(25%);
+    border-radius: 20px;
+    left: 25%;
+    background: #16793d;
+  }
+}
+h5{margin-left: 10px;}
+p{margin: 10px;}
+.contributors{
+  margin: auto;
+  ion-icon{
+    margin: 0 5px;
+    font-size: 50px;
+  }
+}
