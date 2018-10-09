@@ -4,8 +4,9 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { OrchardsPage } from '../pages/orchards/list';
+import { OrchardDetailsPage } from '../pages/orchard-details/orchard-details';
+import { OrchardWriterPage } from '../pages/orchard-writer/orchard-writer';
+import { OrchardsPage } from '../pages/orchards/orchard';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -14,7 +15,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
+    OrchardDetailsPage,
+    OrchardWriterPage,
     OrchardsPage
   ],
   imports: [
@@ -25,7 +27,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
+    OrchardDetailsPage,
+    OrchardWriterPage,
     OrchardsPage
   ],
   providers: [
