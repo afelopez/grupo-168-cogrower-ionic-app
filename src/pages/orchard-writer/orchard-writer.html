@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>orchard-writer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h2>{{selectedOrchard.name | uppercase}} Details</h2>
+  <div>
+    <label>id:
+      <input [(ngModel)]="selectedOrchard.name" placeholder="Nombre de la huerta">
+    </label>
+    </div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedOrchard.description" placeholder="Descripción">
+    </label>
+  </div>
+</ion-content>
