@@ -1,28 +1,24 @@
 import { Component } from '@angular/core';
-import { Platform, NavParams, ViewController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
+import { USER } from '../../app/mock-user';
+
 @Component({
   templateUrl: 'profile.html'
 })
 export class ProfilePage {
-  constructor(
-    public platform: Platform,
-    public params: NavParams,
-    public viewCtrl: ViewController
-  ) {
-    var characters = [
-      {
-        name: 'William González',
-        lastname: 'Sneaky little hobbitses!',
-        /*image: 'assets/img/avatar-gollum.jpg',*/
-		email: 'willigon106@gmail.com',
-		birthday: '27-07-1990',
-        password: '********'
-      }
-    ];
-    //this.character = characters[this.params.get('charNum')];
+  user: Array<{name: string, lastname: string, profileimg: string, email: string, birthday: date}>;
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    // agrego variable la puedo llamar en el html del componente
+    // crea la estancia de la clase Hero para el FOR
+    this.user = USER;
   }
-  
+
+  /*orchardTapped(event, orchard) {
+    this.navCtrl.push(OrchardDetailsPage, {
+      orchard: orchard
+    });
+  }*/
 	dismiss() {
-		this.viewCtrl.dismiss();
+		this.navCtrl.dismiss();
 	}
 }
