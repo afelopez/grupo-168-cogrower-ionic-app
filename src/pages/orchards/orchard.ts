@@ -13,7 +13,6 @@ export class OrchardsPage {
   orchards: Array<{name: string, description: string, image: string, icon: string}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.icons = ['leaf'];
     // agrego variable la puedo llamar en el html del componente
     // crea la estancia de la clase Hero para el FOR
     this.orchards = ORCHARDS;

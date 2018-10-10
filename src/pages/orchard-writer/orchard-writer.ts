@@ -8,10 +8,13 @@ import { Orchard } from "../../app/orchard";
   templateUrl: 'orchard-writer.html',
 })
 export class OrchardWriterPage {
-  @Input() orchard: Orchard;
-  selectedOrchard: any;
+  @Input() selectedOrchard: Orchard;
+  // selectedOrchard: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.selectedOrchard = navParams.get('orchard');
+  }
+  goBack(){
+    this.navCtrl.pop();
   }
 }
