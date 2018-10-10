@@ -6,6 +6,9 @@ import { MyApp } from './app.component';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { OrchardsPage } from '../pages/orchards/list';
+import { SigninPage } from '../pages/sign-in/sign-in';
+import { SignupPage } from '../pages/sign-up/sign-up';
+import { ProfilePage } from '../pages/profile/profile';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,7 +18,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
-    OrchardsPage
+    OrchardsPage,
+    SigninPage,
+    SignupPage,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +32,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
-    OrchardsPage
+    OrchardsPage,
+    SigninPage,
+    SignupPage,
+    ProfilePage
   ],
   providers: [
     StatusBar,
