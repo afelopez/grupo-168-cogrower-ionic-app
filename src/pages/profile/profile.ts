@@ -10,6 +10,7 @@ export class ProfilePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // agrego variable la puedo llamar en el html del componente
     // crea la estancia de la clase Hero para el FOR
+	
     this.user = USER;
   }
 
@@ -17,8 +18,8 @@ export class ProfilePage {
     this.navCtrl.push(OrchardDetailsPage, {
       orchard: orchard
     });
-  }*/
+  }
 	dismiss() {
 		this.navCtrl.dismiss();
-	}
+	}*/
 }
