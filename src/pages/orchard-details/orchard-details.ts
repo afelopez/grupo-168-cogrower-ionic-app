@@ -7,9 +7,8 @@ import { OrchardWriterPage } from '../orchard-writer/orchard-writer';
   selector: 'page-orchard-details',
   templateUrl: 'orchard-details.html'
 })
-export class OrchardDetailsPage {OrchardDetailsPage
+export class OrchardDetailsPage {
   selectedOrchard: any;
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.selectedOrchard = navParams.get('orchard');
   }
