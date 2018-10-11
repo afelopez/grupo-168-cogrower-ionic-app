@@ -1,22 +1,14 @@
 <ion-header>
-
   <ion-navbar>
-    <ion-title>orchard-writer</ion-title>
+    <ion-title>Editar huerta</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
-  <h2>{{selectedOrchard.name | uppercase}} Details</h2>
-  <div>
-    <label>id:
-      <input [(ngModel)]="selectedOrchard.name" placeholder="Nombre de la huerta">
-    </label>
-    </div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedOrchard.description" placeholder="Descripción">
-    </label>
-  </div>
+  <h2>Edición</h2>
+  <ion-input [(ngModel)]="selectedOrchard.name" placeholder="Nombre de la huerta"></ion-input>
+  <ion-textarea rows="5" [(ngModel)]="selectedOrchard.description" placeholder="Enter a description"></ion-textarea>
+  <ion-buttons start>
+    <button ion-button full color="secundary"(click)="goBack()">Guardar</button>
+  </ion-buttons>
 </ion-content>
