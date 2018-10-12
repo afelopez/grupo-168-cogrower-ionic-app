@@ -29,7 +29,17 @@ button.edit-botton{
   width: 40px;
   height: 45px;
   text-align: center;
-  float: right !important;
+  float: right;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 50%;
+  font-size: 20px;
+}
+button.gallery-botton{
+  color: white;
+  width: 40px;
+  height: 45px;
+  text-align: end;
+  float: right;
   background-color: rgba(0,0,0,0.7);
   border-radius: 50%;
   font-size: 20px;

@@ -3,21 +3,23 @@
     <button menuToggle *ngIf="!selectedOrchard">
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Item Details</ion-title>
+    <ion-title>Detalle de la huerta</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content>
   <div class="image-header" [style.background-image]="'url(../../assets/imgs/' + selectedOrchard.image + ')'" [style.height.px]="150">
-    <button ion-button clear class="edit-botton" (click)="editOrchard($event, selectedOrchard)">
-      <ion-icon name="create"></ion-icon>
+    <button ion-button clear class="gallery-botton" (click)="galleryOrchard($event)">
+      <ion-icon name="images"></ion-icon>
     </button>
     <h3 text-center >
       <ion-icon [name]="selectedOrchard.icon"></ion-icon>
       {{selectedOrchard.name}}
-    </h3>
+        </h3>
   </div>
   <ion-grid>
+    <button ion-button clear class="edit-botton" (click)="editOrchard($event, selectedOrchard)">
+      <ion-icon name="create"></ion-icon>
+    </button>
     <ion-row>
       <ion-col>
         Capacidad: #/#
