@@ -7,9 +7,10 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { OrchardDetailsPage } from '../pages/orchard-details/orchard-details';
 import { OrchardWriterPage } from '../pages/orchard-writer/orchard-writer';
 import { OrchardsPage } from '../pages/orchards/orchard';
-
+import { GalleryPage } from '../pages/gallery/gallery';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { IonicImageViewerModule } from 'ionic-img-viewer';
 
 @NgModule({
   declarations: [
@@ -17,11 +18,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HelloIonicPage,
     OrchardDetailsPage,
     OrchardWriterPage,
-    OrchardsPage
+    OrchardsPage,
+    GalleryPage,
+
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    IonicImageViewerModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -29,7 +33,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HelloIonicPage,
     OrchardDetailsPage,
     OrchardWriterPage,
-    OrchardsPage
+    OrchardsPage,
+    GalleryPage,
   ],
   providers: [
     StatusBar,

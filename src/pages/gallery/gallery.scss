@@ -1,0 +1,42 @@
+page-gallery {
+ hr{border:1px solid white;
+
+}
+   ion-title{
+      background-color: whitesmoke;
+        }
+    ion-content.bg-style{
+      width: 100%;
+      height: 100%;
+      padding-top: 10pt;
+      background: linear-gradient(360deg, #28b463  ,#94dfd2, #50a3a2);
+    }
+
+    ion-slide.image-slider{
+    width: 10px;
+    height:10px;
+    margin:auto;
+    border:1px solid black;
+    }
+
+    ion-slide.swiper-slide {
+        left: 25%;
+        width: 50%;
+        margin: auto;
+    }
+
+    .slide-zoom {
+        background:white ;
+        border-collapse:separate;
+        border-spacing: 10px 5px;
+    }
+
+    .thumb-img {
+        padding: 2px;
+        border-collapse:separate;
+        border-spacing: 10px 5px;
+    }
+    ion-footer{
+        text-align: center
+    }
+}
