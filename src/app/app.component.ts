@@ -31,8 +31,7 @@ export class MyApp {
     this.pages = [
       { title: 'Explorar', component: HelloIonicPage },
       { title: 'Mis huertas', component: OrchardsPage },
-      { title: 'La galeria', component: GalleryPage},
-    ];
+      ];
   }
 
   initializeApp() {
