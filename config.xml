@@ -88,4 +88,10 @@
     <plugin name="cordova-plugin-geolocation" spec="~4.0.1">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="Mi Ubicacion!" />
     </plugin>
+    <plugin name="cordova-plugin-googlemaps" spec="~2.4.6">
+        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyABxewVFfAMR7ixuqg6NaSxvlS_KYj0290" />
+        <variable name="API_KEY_FOR_IOS" value="AIzaSyABxewVFfAMR7ixuqg6NaSxvlS_KYj0290" />
+    </plugin>
+    <engine name="browser" spec="~5.0.4" />
+    <engine name="android" spec="~7.1.1" />
 </widget>
