@@ -65,37 +65,4 @@ export class HelloIonicPage {
       mapEle.classList.add('show-map');
     });
   }
-
-  /*ngAfterViewInit(){
-    this.geolocationNative();
-  }
-
-  geolocationNative(){
-      this.geolocation.getCurrentPosition().then((geposition: Geoposition)=>{
-      console.log(geposition);
-      this.loadMap(geposition);
-      })
-
-      }
-
-      loadMap(){
-        /*Environment.setEnv({
-          'API_KEY_FOR_BROWSER_RELEASE':'',
-          'API_KEY_FOR_BROWSER_DEBUG':''
-        });
-        this.map = GoogleMaps.create('map');
-        /*let element: HTMLElement = document.getElementById('map');
-        let map: GoogleMap = this.googleMaps.create(element);
-        let latlng = new latLng(position.coords.latitude, position.coords.longitude);
-        map.one(GoogleMapsEvent.MAP_READY).then(() => {
-
-          let position: CameraPosition  = {
-              target: latlng,
-              zoom: 10,
-              tilt: 30
-          };
-
-            //map.moveCamera(position);
-        })
-      }*/
-  }
+}
