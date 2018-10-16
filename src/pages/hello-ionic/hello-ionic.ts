@@ -43,8 +43,10 @@ export class HelloIonicPage {
   }
 
   loadMap(position: Geoposition){
-    let latitude = position.coords.latitude;
-    let longitude = position.coords.latitude;
+    /*let latitude = position.coords.latitude;
+    let longitude = position.coords.latitude;*/
+    let latitude = 4.660628;
+    let longitude = -74.10289;
     console.log(latitude,longitude);
 
     let mapEle: HTMLElement = document.getElementById('map');
