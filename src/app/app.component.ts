@@ -17,6 +17,7 @@ export class MyApp {
 
   // make HelloIonicPage the root (or first) page
   rootPage = HelloIonicPage;
+  //rootPage: any;
   pages: Array<{title: string, component: any}>;
 
   constructor(
@@ -36,6 +37,7 @@ export class MyApp {
 
   initializeApp() {
     this.platform.ready().then(() => {
+      /*this.rootPage = HelloIonicPage;*/
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
