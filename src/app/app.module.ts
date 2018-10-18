@@ -22,7 +22,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 
 const cloudSettings: CloudSettings = {
   'core': {
-    'app_id': 'YOUR IONIC APP ID'
+    'app_id': '753168831690650'
   },
   'auth': {
     'facebook': {
