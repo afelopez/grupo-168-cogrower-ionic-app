@@ -94,4 +94,8 @@
     </plugin>
     <engine name="browser" spec="~5.0.4" />
     <engine name="android" spec="~7.1.1" />
+    <plugin name="cordova-plugin-facebook4" spec="3.1.0">
+        <variable name="APP_ID" value="753168831690650" />
+        <variable name="APP_NAME" value="CoGrower" />
+    </plugin>
 </widget>
