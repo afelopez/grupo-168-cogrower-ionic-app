@@ -20,7 +20,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HelloIonicPage,
     SigninPage,
     SignupPage,
-    ProfilePage
+    ProfilePage,
     OrchardDetailsPage,
     OrchardWriterPage,
     OrchardsPage
@@ -35,7 +35,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HelloIonicPage,
     SigninPage,
     SignupPage,
-    ProfilePage
+    ProfilePage,
     OrchardDetailsPage,
     OrchardWriterPage,
     OrchardsPage
