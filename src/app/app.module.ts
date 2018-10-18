@@ -1,3 +1,4 @@
+import { AuthService } from './auth-service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -63,7 +64,8 @@ import {
     SplashScreen,
     Geolocation,
     GoogleMaps,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+	AuthService
   ]
 })
 export class AppModule {}

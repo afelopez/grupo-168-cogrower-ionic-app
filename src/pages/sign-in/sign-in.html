@@ -7,19 +7,29 @@
 	</ion-navbar>
 </ion-header>
 <ion-content>
-	<ion-list>
-		<ion-item>
-			<ion-input type="email" placeholder="Email"></ion-input>
-		</ion-item>
-		<ion-item>
-			<ion-input type="password" placeholder="Contraseña"></ion-input>
-		</ion-item>
-	</ion-list>
-	<div text-center padding>
-		<button ion-button color="primary" block>Ingresar</button>
-		<button ion-button round>Ingresar con Facebook</button>
-	</div>
-	<div text-center padding>
-		<button ion-button (click)="createAccount()" clear>Crear cuenta</button>
-	</div>
+	<form #registerForm="ngForm">
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+            
+            <ion-item>
+              <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="registerCredentials.email" required></ion-input>
+            </ion-item>
+            
+            <ion-item>
+              <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="registerCredentials.password" required></ion-input>
+            </ion-item>
+            
+          </ion-list>
+        </ion-col>
+      </ion-row>
+		<div text-center padding>
+			<button ion-button color="primary" block [disabled]="!registerForm.form.valid">Ingresar</button>
+			<button ion-button round>Ingresar con Facebook</button>
+		</div>
+		<div text-center padding>
+			<button ion-button (click)="createAccount()" clear>Crear cuenta</button>
+		</div>
+      
+    </form>
 </ion-content>

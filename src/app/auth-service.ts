@@ -5,7 +5,7 @@ import '../../node_modules/rxjs/add/operator/map';
 
 @Injectable()
 export class AuthService {
-  currentUser: UserI;
+  currentUser: User;
  
   public login(credentials) {
     if (credentials.email === null || credentials.password === null) {
@@ -14,7 +14,7 @@ export class AuthService {
       return Observable.create(observer => {
         // At this point make a request to your backend to make a real check!
         let access = (credentials.password === "pass" && credentials.email === "email");
-        this.currentUser = new UserI('Simon', 'saimon@devdactic.com');
+        this.currentUser = new User('Simon', 'saimon@devdactic.com');
         observer.next(access);
         observer.complete();
       });
@@ -33,7 +33,7 @@ export class AuthService {
     }
   }
  
-  public getUserInfo() : UserI {
+  public getUserInfo() : User {
     return this.currentUser;
   }
  
