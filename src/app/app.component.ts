@@ -3,6 +3,9 @@ import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
+import { SigninPage } from '../pages/sign-in/sign-in';
+import { SignupPage } from '../pages/sign-up/sign-up';
+import { ProfilePage } from '../pages/profile/profile';
 import { OrchardsPage } from '../pages/orchards/orchard';
 import { GalleryPage } from '../pages/gallery/gallery';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -30,9 +33,12 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Explorar', component: HelloIonicPage },
-      { title: 'Mis huertas', component: OrchardsPage },
-      ];
+      	{ title: 'Explorar', component: HelloIonicPage },
+      	{ title: 'Mis huertas', component: OrchardsPage },
+		{ title: 'Ingresar', component: SigninPage },
+		{ title: 'Crear cuenta', component: SignupPage },
+		{ title: 'Mi Perfil', component: ProfilePage }
+    ];
   }
 
   initializeApp() {
