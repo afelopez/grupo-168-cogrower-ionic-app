@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams} from 'ionic-angular';
+import { NavController} from 'ionic-angular';
 import { SignupPage } from '../sign-up/sign-up';
 
 @Component({
   templateUrl: 'sign-in.html'
 })
-export class SigninPage { 
-	loading: Loading;
+export class SigninPage {
 	registerCredentials = { email: '', password: '' };
 	
 	constructor(private navCtrl: NavController){}
