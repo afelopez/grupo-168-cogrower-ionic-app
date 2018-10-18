@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+     <ion-title>
+     La galeria de mis huertas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="gallery-style">
+          <div><p>Bienvenido a  tú galería</p></div>
+          <div></div>
+           <div class="row responsive"><ion-slides class="image-slider" loop="true" slidesPerView="2">
+    <ion-slide *ngFor="let img of images">
+      <img src="assets/imgs/{{img}}"  class="thumb-img" imageViewer/>
+    </ion-slide>
+  </ion-slides></div>
+ <hr/>
+  <div class="row responsive"><ion-slides class="image-slider" loop="true" slidesPerView="2">
+      <ion-slide *ngFor="let iman of iman2">
+        <img src="assets/imgs/{{iman}}" class="thumb-img" imageViewer/>
+      </ion-slide>
+    </ion-slides></div>
+  </ion-content>
+  <ion-footer pading center>
+    <ion-title>CoGrower</ion-title>
+
+    </ion-footer>

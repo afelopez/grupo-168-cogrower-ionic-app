@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { OrchardWriterPage } from '../orchard-writer/orchard-writer';
+import { GalleryPage} from '../gallery/gallery';
 
 
 @Component({
@@ -14,7 +15,8 @@ export class OrchardDetailsPage {
   }
   editOrchard(event, orchard) {
     this.navCtrl.push(OrchardWriterPage, {
-      orchard: orchard
-    });
+      orchard: orchard});
   }
-}
+  galleryOrchard(event,orchard){
+    this.navCtrl.push(GalleryPage)};
+  }
