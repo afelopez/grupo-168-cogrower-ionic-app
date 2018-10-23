@@ -7,6 +7,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { SigninPage } from '../pages/sign-in/sign-in';
 import { SignupPage } from '../pages/sign-up/sign-up';
+import { AccountPage } from '../pages/account/account';
 import { OrchardDetailsPage } from '../pages/orchard-details/orchard-details';
 import { OrchardWriterPage } from '../pages/orchard-writer/orchard-writer';
 import { OrchardsPage } from '../pages/orchards/orchard';
@@ -40,7 +41,8 @@ import {
     OrchardDetailsPage,
     OrchardWriterPage,
     OrchardsPage,
-    GalleryPage
+    GalleryPage,
+	AccountPage
   ],
   imports: [
     BrowserModule,
@@ -58,7 +60,8 @@ import {
     OrchardDetailsPage,
     OrchardWriterPage,
     OrchardsPage,
-    GalleryPage
+    GalleryPage,
+	AccountPage
   ],
   providers: [
     StatusBar,
