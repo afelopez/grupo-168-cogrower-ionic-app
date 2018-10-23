@@ -40,7 +40,7 @@ const ACCESS_TOKEN_PARAM = 'access_token';
 const CONFIRM_ACTION = "confirm";
 const SETPASSWORD_ACTION = "set-password";
 
-@IonicPage()
+//@IonicPage()
 @Component({
   selector: 'page-account',
   templateUrl: 'account.html'
