@@ -1,13 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
-
-import { Platform, MenuController, Nav } from 'ionic-angular';
+import { Platform, MenuController, Nav, AlertController, Events } from 'ionic-angular';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { SigninPage } from '../pages/sign-in/sign-in';
 import { SignupPage } from '../pages/sign-up/sign-up';
-import { ProfilePage } from '../pages/profile/profile';
+import { AccountPage } from '../pages/account/account';
 import { OrchardsPage } from '../pages/orchards/orchard';
-import { GalleryPage } from '../pages/gallery/gallery';
+//import { GalleryPage } from '../pages/gallery/gallery';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -17,9 +16,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
+  
 
   // make HelloIonicPage the root (or first) page
-  rootPage = HelloIonicPage;
+  rootPage = AccountPage;
+  //public rootPage: any = 'AccountPage';
   //rootPage: any;
   pages: Array<{title: string, component: any}>;
 
@@ -36,8 +37,7 @@ export class MyApp {
       	{ title: 'Explorar', component: HelloIonicPage },
       	{ title: 'Mis huertas', component: OrchardsPage },
 		{ title: 'Ingresar', component: SigninPage },
-		{ title: 'Crear cuenta', component: SignupPage },
-		{ title: 'Mi Perfil', component: ProfilePage }
+		{ title: 'Crear cuenta', component: SignupPage }
     ];
   }
 

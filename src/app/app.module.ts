@@ -1,13 +1,13 @@
-import { AuthService } from './auth-service';
+import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, ErrorHandler } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { SigninPage } from '../pages/sign-in/sign-in';
 import { SignupPage } from '../pages/sign-up/sign-up';
-import { ProfilePage } from '../pages/profile/profile';
+import { AccountPage } from '../pages/account/account';
 import { OrchardDetailsPage } from '../pages/orchard-details/orchard-details';
 import { OrchardWriterPage } from '../pages/orchard-writer/orchard-writer';
 import { OrchardsPage } from '../pages/orchards/orchard';
@@ -15,6 +15,9 @@ import { GalleryPage } from '../pages/gallery/gallery';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
+
+import { AuthProvider } from '../providers/auth/auth';
+import { MyApp } from './app.component';
 
 import { Geolocation } from '@ionic-native/geolocation';
 import {
@@ -35,17 +38,18 @@ import {
     HelloIonicPage,
     SigninPage,
     SignupPage,
-    ProfilePage,
     OrchardDetailsPage,
     OrchardWriterPage,
     OrchardsPage,
     GalleryPage,
-
+	AccountPage
   ],
   imports: [
     BrowserModule,
+	ReactiveFormsModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp),
-    IonicImageViewerModule,
+    IonicImageViewerModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -53,11 +57,11 @@ import {
     HelloIonicPage,
     SigninPage,
     SignupPage,
-    ProfilePage,
     OrchardDetailsPage,
     OrchardWriterPage,
     OrchardsPage,
     GalleryPage,
+	AccountPage
   ],
   providers: [
     StatusBar,
@@ -65,7 +69,7 @@ import {
     Geolocation,
     GoogleMaps,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-	AuthService
+	AuthProvider
   ]
 })
 export class AppModule {}
