@@ -2,9 +2,15 @@ page-account {
 
   // give the page a gradient background
   ion-content.content {
-      background: linear-gradient(45deg, rgba(19, 84, 122, 1) 0%, rgba(128, 208, 199, 1) 100%);
+      //background: linear-gradient(45deg, rgba(19, 84, 122, 1) 0%, rgba(128, 208, 199, 1) 100%);
+	  background: rgba(40,180,99, 0.8);
   }
-
+  .logoco {
+	
+  }
+  .ion-input::placeholder {
+	color: #fff;
+  }
   h2 {
     color: #fff;
   }
