@@ -4,6 +4,6 @@ export class User {
   lastname: string;
   profileimg: string;
   email: string;
-  birthday: date;
+  birthday: string;
   password: string;
 }
